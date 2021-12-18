@@ -80,7 +80,10 @@ body {
     max-width: var(--container-max-width);
     margin: 0 auto;
 }
-
+#cont{
+    margin-top: 16px;
+    display: flex;
+}
 @media(max-width: 1340px) {
     .row {
         max-width: 1100px;
@@ -101,10 +104,25 @@ body {
 
 @media(max-width: 600px) {
     .row {
-        padding: 0 var(--gutter-small);
+        padding: 0 var(--gutter-normal);
     }
 }
 
+#skills {
+    display: flex;
+    justify-content: space-evenly;
+}
+#skl-btn > img {
+    height: 50px;
+    width: 50px;
+}
+.skl-btn {
+    border: none;
+    background-color: black;
+    color: white;
+    width: 65px;
+    font-size: 16px;
+}
 section {
     padding: var(--gutter-huge) 0;
     border-bottom: var(--border-light);
@@ -296,6 +314,18 @@ body:not(.user-is-tabbing) a:focus {
     padding-left: 1rem;
     font-family: sans-serif;
 }
+@media(max-width: 600px) {
+    #skills {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        margin: auto;
+        max-width: fit-content;
+    }
+
+}
+
+
 
 /* ----- Back to Top ----- */
 
