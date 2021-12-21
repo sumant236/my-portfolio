@@ -536,9 +536,18 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 /* --------------------------------------- */
-/* ----- Clients ----- */
+/* ----- Skills ----- */
 /* --------------------------------------- */
 
+.img-width{
+    width: 90px;
+}
+
+@media (max-width: 600px) {
+    .img-width{
+        width: 65px;
+    }   
+}
 .client__logos {
     display: flex;
     justify-content: space-between;
