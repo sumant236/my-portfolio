@@ -2,8 +2,6 @@
 
 ### A beautiful minimal and accessible portfolio template for Developers ✨.
 
-]]
-
 ## Features
 
 - Clean, Simple and Modern UI Design.
