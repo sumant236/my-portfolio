@@ -3,23 +3,22 @@
  ---------------------------------------- */
 
 const handleFirstTab = (e) => {
-  if(e.key === 'Tab') {
-    document.body.classList.add('user-is-tabbing')
+  if (e.key === "Tab") {
+    document.body.classList.add("user-is-tabbing");
 
-    window.removeEventListener('keydown', handleFirstTab)
-    window.addEventListener('mousedown', handleMouseDownOnce)
+    window.removeEventListener("keydown", handleFirstTab);
+    window.addEventListener("mousedown", handleMouseDownOnce);
   }
-
-}
+};
 
 const handleMouseDownOnce = () => {
-  document.body.classList.remove('user-is-tabbing')
+  document.body.classList.remove("user-is-tabbing");
 
-  window.removeEventListener('mousedown', handleMouseDownOnce)
-  window.addEventListener('keydown', handleFirstTab)
-}
+  window.removeEventListener("mousedown", handleMouseDownOnce);
+  window.addEventListener("keydown", handleFirstTab);
+};
 
-window.addEventListener('keydown', handleFirstTab)
+window.addEventListener("keydown", handleFirstTab);
 
 const backToTopButton = document.querySelector(".back-to-top");
 let isBackToTopRendered = false;
@@ -40,4 +39,16 @@ window.addEventListener("scroll", () => {
     isBackToTopRendered = false;
     alterStyles(isBackToTopRendered);
   }
+});
+
+const navLinks = document.querySelectorAll(".nav__link");
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    // Remove 'selected' class from all links
+    navLinks.forEach((link) => link.classList.remove("selected"));
+
+    // Add 'selected' class to the clicked link
+    link.classList.add("selected");
+  });
 });
