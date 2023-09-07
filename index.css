@@ -691,14 +691,20 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 @media (max-width: 360px) {
-  .about__content {
-    margin-top: 0px;
+  .about__photo {
+    height: 90%;
   }
   .resume__box {
     display: flex;
     flex-direction: column;
     gap: 20px;
     max-width: 70%;
+  }
+}
+
+@media (max-width: 340px) {
+  h2 {
+    height: 100px;
   }
 }
 
