@@ -3,484 +3,600 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
-
-    <title>
-      Sumant Singh | A Front-End Developer based in Charkhi Dadri, Haryana.
-    </title>
-
-    <meta name="description" content="Add small description of yourslef." />
-    <meta
-      name="keywords"
-      content="Put your name, skills and some coding keywords"
+    <title>SUMANT SINGH</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><rect width='30' height='30' rx='6' fill='%23111827'/><path d='M8 10l5 5-5 5' stroke='%2310b981' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' fill='none'/><path d='M16 20h7' stroke='%234f46e5' stroke-width='3' stroke-linecap='round' fill='none'/></svg>"
     />
-    <link rel="stylesheet" href="index.css" />
-  </head>
 
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="SUMANT | Frontend Developer" />
+    <meta
+      name="description"
+      content="Portfolio of Sumant, a Frontend Developer specializing in clean, interactive web experiences."
+    />
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="SUMANT | Frontend Developer" />
+    <meta
+      property="og:description"
+      content="Check out my latest projects and skills."
+    />
+    <meta property="og:image" content="link-to-your-actual-logo-image.png" />
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;20
+0;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/32650486ba.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+  </head>
   <body>
-    <header class="header" role="banner" id="top">
-      <div class="header_row">
-        <nav class="nav" role="navigation">
-          <ul class="nav__items">
-            <li class="nav__item">
-              <a href="#about" class="nav__link">About</a>
-            </li>
-            <li class="nav__item">
-              <a href="#experience" class="nav__link">Experience</a>
-            </li>
-            <li class="nav__item">
-              <a href="#project" class="nav__link">Project</a>
-            </li>
-            <li class="nav__item">
-              <a href="#skill" class="nav__link">Skills</a>
-            </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link">Contact</a>
-            </li>
-          </ul>
-        </nav>
+    <!-- header -->
+    <header>
+      <!-- <div class="logo"></div> -->
+      <!-- navbar -->
+      <nav class="nav-list">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="hamburger-menu">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarlist"
+          !aria-expanded
+          aria-label="Expand Navigation"
+        >
+          <i class="fa-solid fa-bars fs-5"></i>
+        </button>
+        <div class="collapse navbar-collapse hamburger-list" id="navbarlist">
+          <div class="navbar-nav">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
       </div>
-      <div class="header__text-box row">
-        <div class="header__text">
-          <h1 class="heading-primary">
-            <span>Sumant Singh</span>
-          </h1>
-          <p>A Front-End Developer</p>
-          <a href="#contact" class="btn btn--pink">Get in touch</a>
+      <div>
+        <div><h1>Sumant Singh</h1></div>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/sumant-singh-619851192/">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/sumant236">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="mailto:sumantsingh236@gmail.com">
+            <i class="fa-brands fa-google-plus-g"></i>
+          </a>
+          <a href="https://www.quora.com/profile/Sumant-Singh-49">
+            <i class="fa-brands fa-quora"></i>
+          </a>
         </div>
       </div>
     </header>
+    <!-- About -->
+    <section id="about">
+      <div class="about">
+        <div class="profile-img">
+          <img src="./image/Sumant Singh.jpg" alt="profile picture" />
+        </div>
+        <!-- Professional Summary -->
+        <p>
+          Experienced web developer with skills in
+          <span
+            >Java, ReactJS, React Redux, HTML, CSS, JavaScript and
+            SpringBoot</span
+          >. Proficient in creating captivating and
+          <span>interactive user interfaces</span>, as well as building robust
+          <span>back-end solutions using Java & SpringBoot</span>. Committed to
+          clean code and meticulous attention to detail, resulting in seamless
+          user experiences. Known for dedication, teamwork, and effective
+          communication. Open to new challenges and eager to
+          <span>collaborate</span> on your next project!
+        </p>
+      </div>
+    </section>
+    <!-- Skills -->
+    <section id="skills">
+      <div class="section-heading">
+        <i class="fa-solid fa-chalkboard-user"></i>
+        <h1>Skills</h1>
+      </div>
+      <!-- list of skills -->
+      <div class="skills">
+        <div
+          class="progress skills-bar"
+          role="progressbar"
+          aria-label="java"
+          aria-valuenow="70"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        >
+          <div
+            class="progress-bar"
+            style="width: 70%; background-color: #f04102"
+          >
+            Java
+          </div>
+        </div>
+        <div
+          class="progress skills-bar"
+          role="progressbar"
+          aria-label="react"
+          aria-valuenow="90"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        >
+          <div
+            class="progress-bar"
+            style="width: 90%; background-color: #0265f0"
+          >
+            React
+          </div>
+        </div>
+        <div
+          class="progress skills-bar"
+          role="progressbar"
+          aria-label="react-redux"
+          aria-valuenow="80"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        >
+          <div
+            class="progress-bar"
+            style="width: 80%; background-color: #0c3772"
+          >
+            React Redux
+          </div>
+        </div>
+        <div
+          class="progress skills-bar"
+          role="progressbar"
+          aria-label="html"
+          aria-valuenow="90"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        >
+          <div
+            class="progress-bar"
+            style="width: 90%; background-color: #0a9517"
+          >
+            HTML
+          </div>
+        </div>
+        <div
+          class="progress skills-bar"
+          role="progressbar"
+          aria-label="css"
+          aria-valuenow="80"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        >
+          <div
+            class="progress-bar"
+            style="width: 80%; background-color: #f0023d"
+          >
+            CSS
+          </div>
+        </div>
+        <div
+          class="progress skills-bar"
+          role="progressbar"
+          aria-label="javascript"
+          aria-valuenow="75"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        >
+          <div
+            class="progress-bar"
+            style="width: 75%; background-color: #7d02f0"
+          >
+            JavaScript
+          </div>
+        </div>
+        <div
+          class="progress skills-bar"
+          role="progressbar"
+          aria-label="springboot"
+          aria-valuenow="60"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        >
+          <div
+            class="progress-bar"
+            style="width: 60%; background-color: #058e93"
+          >
+            SpringBoot
+          </div>
+        </div>
+        <div
+          class="progress skills-bar"
+          role="progressbar"
+          aria-label="material-ui"
+          aria-valuenow="65"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        >
+          <div
+            class="progress-bar"
+            style="width: 65%; background-color: #570565"
+          >
+            Material UI
+          </div>
+        </div>
+        <div
+          class="progress skills-bar"
+          role="progressbar"
+          aria-label="ant-design"
+          aria-valuenow="65"
+          aria-valuemin="0"
+          aria-valuemax="100"
+        >
+          <div
+            class="progress-bar"
+            style="width: 65%; background-color: #5f0b1d"
+          >
+            Ant Design
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Experience -->
+    <section id="experience">
+      <div class="section-heading">
+        <i class="fas fa-briefcase"></i>
+        <h1>Work Experience</h1>
+      </div>
 
-    <main role="main">
-      <section class="about" id="about">
-        <div class="row">
-          <h2 class="about_header">About Me</h2>
-          <div class="about__content">
-            <div class="about__text">
-              <p class="about_para">
-                Experienced web developer with skills in HTML, CSS, JavaScript,
-                ReactJS, MongoDB, Express, and Node.js. Proficient in creating
-                captivating and interactive user interfaces, as well as building
-                robust back-end solutions using MongoDB, Express, and Node.js.
-                Committed to clean code and meticulous attention to detail,
-                resulting in seamless user experiences. Known for dedication,
-                teamwork, and effective communication. Open to new challenges
-                and eager to collaborate on your next project!.
-              </p>
-              <div class="resume__box">
+      <div class="timeline">
+        <div class="timeline-left-box left">
+          <div class="timeline-container">
+            <div class="timeline-logo">
+              <img src="./image/Zipstack Logo.png" />
+            </div>
+            <h3 class="designation m0 m-blue">
+              Garduate Trainee - Frontend Developer
+            </h3>
+            <h4 class="heading-name">Zipstack</h4>
+            <h5 class="duration m0">July 2022 - May 2023</h5>
+            <p class="description text-align-justify">
+              Completed the migration of Material-UI (MUI) components to Ant
+              Design framework from scratch, ensuring seamless integration and
+              consistent UI across the application. Keywords: migration,
+              Material-UI, Ant Design, UI integration, consistency. Implemented
+              comprehensive unit tests for hooks, components, and methods using
+              the Jest testing framework during the migration process, ensuring
+              code reliability and identifying potential issues.
+            </p>
+          </div>
+        </div>
+        <div class="timeline-right-box right"></div>
+        <div id="experience-divider">
+          <div class="experience-traveller">
+            <div>
+              <i class="fas fa-plane"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- education -->
+    <section id="education">
+      <div class="section-heading">
+        <i class="fa-solid fa-graduation-cap"></i>
+        <h1>Education</h1>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-right-box right">
+          <div class="timeline-container">
+            <div class="timeline-logo">
+              <img src="./image/CU-image.jpeg" />
+            </div>
+            <h3 class="designation m0 m-blue">Bachelor of Engineering</h3>
+            <h6 class="stream">Computer Science Engineering</h6>
+            <h4 class="heading-name">Chandigarh University</h4>
+            <h5 class="duration m0">August 2017 - June 2021</h5>
+          </div>
+        </div>
+        <div class="timeline-left-box left"></div>
+        <div id="education-divider">
+          <div class="education-traveller">
+            <div>
+              <i class="fas fa-car-side"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Projects -->
+    <section id="portfolio">
+      <div class="section-heading">
+        <i class="fa-solid fa-list-check"></i>
+        <h1>Projects</h1>
+      </div>
+      <div class="portfolio">
+        <div class="project">
+          <img src="./image/Project-5.jpeg" />
+          <div class="background"></div>
+          <div class="project-details">
+            <div class="project-head">
+              <h3 class="project-name">SkyCast &hyphen; Weather app</h3>
+              <div class="visit-links">
                 <a
-                  href="./images/Sumant_Singh_MERN_stack.pdf"
-                  class="btn"
+                  href="https://skycast-weatherapplication.netlify.app/"
                   target="_blank"
-                  >My Resume</a
+                  >Visit Site <span>&rarr;</span></a
                 >
-                <!-- <a
-                  href="https://drive.google.com/file/d/1vlbcLJm2mJm3bxsEcFaAoJtMZmcUuPG6/view?usp=drive_link"
-                  class="btn"
+                <a href="https://github.com/sumant236/SkyCast_weather-app">
+                  <i class="fa fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-desc">
+              <p>
+                A precision weather dashboard providing real-time meteorological
+                insights and location-based forecasts with an intuitive,
+                responsive user interface.
+              </p>
+              <h6 class="skills-used">Skills Used:</h6>
+              <ul class="skills-used">
+                <li>React JS</li>
+                <li>Context API</li>
+                <li>Open&hyphen;Meteo</li>
+                <li>Axios</li>
+                <li>Google Geocoding API</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <img src="./image/Project-6.png" />
+          <div class="background"></div>
+          <div class="project-details">
+            <div class="project-head">
+              <h3 class="project-name">BusyBuy &hyphen; E-commerce</h3>
+              <div class="visit-links">
+                <a
+                  href="https://busybuy-e-commerce.netlify.app/"
                   target="_blank"
-                  >View Resume</a
-                > -->
+                  >Visit Site <span>&rarr;</span></a
+                >
+                <a href="https://github.com/sumant236/BusyBuy_React-Redux">
+                  <i class="fa fa-github"></i>
+                </a>
               </div>
             </div>
-            <div class="about__photo-container">
-              <img class="about__photo" src="./images/Img.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="experience" id="experience">
-        <div class="row">
-          <h2>Professional Experience</h2>
-          <div class="exp_box">
-            <div class="experience__image-box">
-              <img
-                src="./images/zipstack_logo.jpeg"
-                alt="zipstack_logo"
-                class="zipstack_logo"
-              />
-            </div>
-            <div class="exp_detail">
-              <h3>Zipstack</h3>
-              <h5>Graduate Trainee (July 2022 - May 2022)</h5>
+            <div class="project-desc">
               <p>
-                1. Completed the migration of Material-UI (MUI) components to
-                Ant Design framework from scratch, ensuring seamless integration
-                and consistent UI across the application. Keywords: migration,
-                Material-UI, Ant Design, UI integration, consistency.
+                A scalable retail dashboard leveraging real-time database
+                listeners to provide instant cart updates and secure, persistent
+                transaction management.
               </p>
+              <h6 class="skills-used">Skills Used:</h6>
+              <ul class="skills-used">
+                <li>React JS</li>
+                <li>Redux Toolkit</li>
+                <li>Firebase Firestore</li>
+                <li>Firebase Auth</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <img src="./image/Project-1.png" />
+          <div class="background"></div>
+          <div class="project-details">
+            <div class="project-head">
+              <h3 class="project-name">Chatter-Box</h3>
+              <div class="visit-links">
+                <a href="https://chatter-box-sandy.vercel.app/" target="_blank"
+                  >Visit Site <span>&rarr;</span></a
+                >
+                <a href="https://github.com/sumant236/Chatter-Box">
+                  <i class="fa fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-desc">
               <p>
-                2. Implemented comprehensive unit tests for hooks, components,
-                and methods using the Jest testing framework during the
-                migration process, ensuring code reliability and identifying
-                potential issues. Keywords: unit tests, Jest framework, hooks,
-                components, methods, code reliability, issue identification.
+                A dynamic, real-time messaging platform for seamless
+                communication, connecting users effortlessly across the globe.
               </p>
+              <h6 class="skills-used">Skills Used:</h6>
+              <ul class="skills-used">
+                <li>React JS</li>
+                <li>Material-UI</li>
+                <li>Express JS</li>
+                <li>Mongo DB</li>
+                <li>Server.io</li>
+                <li>React Redux</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <img src="./image/Project-2.png" />
+          <div class="background"></div>
+          <div class="project-details">
+            <div class="project-head">
+              <h3 class="project-name">Healthkart-clone</h3>
+              <div class="visit-links">
+                <a
+                  href="https://healthkart-clone-app.vercel.app/"
+                  target="_blank"
+                  >Visit Site <span>&rarr;</span></a
+                >
+                <a href="https://github.com/sumant236/healthkart-clone">
+                  <i class="fa fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-desc">
               <p>
-                3. Resolved critical bugs on the existing portal, addressing
-                issues related to performance, functionality, and user
-                experience to enhance overall system stability. Keywords: bug
-                fixing, portal, performance, functionality, user experience,
-                system stability.
+                An e-commerce site where user can buy products for his fitness
+                and health.
               </p>
+              <h6 class="skills-used">Skills Used:</h6>
+              <ul class="skills-used">
+                <li>React JS</li>
+                <li>React Redux</li>
+                <li>Material-UI</li>
+                <li>Express JS</li>
+                <li>Mongo DB</li>
+                <li>Firebase</li>
+              </ul>
             </div>
           </div>
         </div>
-      </section>
-
-      <section class="work" id="project">
-        <div class="row">
-          <h2>My Projects</h2>
-          <div class="work__boxes">
-            <div class="work__box">
-              <div class="work__text">
-                <h3>Gusto Clone</h3>
-                <p>
-                  An organisation which helps other organisations by managing
-                  data for them(like: creating offer letters, managing employee
-                  salaries, onboarding of new employee).
-                </p>
-                <ul class="work__list">
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>JavaScript</li>
-                </ul>
-
-                <div class="work__links">
-                  <a
-                    href="https://sumant236.github.io/gusto_clone/why_gusto.html"
-                    target="_blank"
-                    class="link__text"
-                  >
-                    Visit Site <span>&rarr;</span>
-                  </a>
-                  <a
-                    href="https://github.com/sumant236/gusto_clone"
-                    title="View Source Code"
-                    target="_blank"
-                  >
-                    <img
-                      src="./images/github.svg"
-                      class="work__code"
-                      alt="GitHub"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="work__image-box">
-                <img
-                  src="./images/Project-1.jpg"
-                  class="work__image"
-                  alt="Project 1"
-                />
+        <div class="project">
+          <img src="./image/Project-3.png" />
+          <div class="background"></div>
+          <div class="project-details">
+            <div class="project-head">
+              <h3 class="project-name">Unacademy-clone</h3>
+              <div class="visit-links">
+                <a
+                  href="https://unacademy-clone-site.netlify.app/"
+                  target="_blank"
+                  >Visit Site <span>&rarr;</span></a
+                >
+                <a href="https://github.com/sumant236/Unacademy-Clone">
+                  <i class="fa fa-github"></i>
+                </a>
               </div>
             </div>
-
-            <div class="work__box">
-              <div class="work__text">
-                <h3>Random Quote Generator</h3>
-                <p>
-                  Generates quotes randomly using API. It helps one to get some
-                  inspiration from leaders of the world.
-                </p>
-                <ul class="work__list">
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>JavaScript</li>
-                  <li>Random Quote Generator API</li>
-                </ul>
-
-                <div class="work__links">
-                  <a
-                    href="https://sumant236.github.io/Generate-Random-Quotes/"
-                    class="link__text"
-                    target="_blank"
-                  >
-                    Visit Site <span>&rarr;</span>
-                  </a>
-                  <a
-                    href="https://github.com/sumant236/Generate-Random-Quotes"
-                    target="_blank"
-                  >
-                    <img
-                      src="./images/github.svg"
-                      class="work__code"
-                      title="View Source Code"
-                      alt="GitHub"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="work__image-box">
-                <img
-                  src="./images/Project-3.jpg"
-                  class="work__image"
-                  alt="Project 3"
-                />
-              </div>
-            </div>
-
-            <!-- <div class="work__box">
-              <div class="work__text">
-                <h3>Times of India Clone</h3>
-                <p>
-                  A reputed website which gives us news from every corner of the
-                  world.
-                </p>
-                <ul class="work__list">
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>JavaScript</li>
-                  <li>JSON-server</li>
-                </ul>
-
-                <div class="work__links">
-                  <a
-                    href="https://times-of-india-clone-icons.netlify.app"
-                    class="link__text"
-                    target="_blank"
-                  >
-                    Visit Site <span>&rarr;</span>
-                  </a>
-                  <a
-                    href="https://github.com/sumant236/timesOfIndiaClone"
-                    target="_blank"
-                  >
-                    <img
-                      src="./images/github.svg"
-                      class="work__code"
-                      title="View Source Code"
-                      alt="GitHub"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="work__image-box">
-                <img
-                  src="./images/Project-2.jpg"
-                  class="work__image"
-                  alt="Project 1"
-                />
-              </div>
-            </div> -->
-
-            <div class="work__box">
-              <div class="work__text">
-                <h3>Unacademy Clone</h3>
-                <p>
-                  An online website which provides coaching for multiple courses
-                  and prepare students for government exams.
-                </p>
-                <ul class="work__list">
-                  <li>React.js</li>
-                  <li>Context API</li>
-                  <li>JSON-server</li>
-                  <li>Material UI</li>
-                </ul>
-
-                <div class="work__links">
-                  <a
-                    href="https://unacademy-clone-site.netlify.app/"
-                    class="link__text"
-                    target="_blank"
-                  >
-                    Visit Site <span>&rarr;</span>
-                  </a>
-                  <a
-                    href="https://github.com/sumant236/Unacademy-Clone"
-                    target="_blank"
-                  >
-                    <img
-                      src="./images/github.svg"
-                      class="work__code"
-                      title="View Source Code"
-                      alt="GitHub"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="work__image-box">
-                <img
-                  src="./images/Project-4.png"
-                  class="work__image"
-                  alt="Project 1"
-                />
-              </div>
-            </div>
-
-            <div class="work__box">
-              <div class="work__text">
-                <h3>Healthkart Clone</h3>
-                <p>
-                  An e-commerce site where user can buy products for his fitness
-                  and health.
-                </p>
-                <ul class="work__list">
-                  <li>React</li>
-                  <li>Redux</li>
-                  <li>Firebase</li>
-                  <li>MongoDb</li>
-                  <li>Express</li>
-                  <li>Material UI</li>
-                </ul>
-
-                <div class="work__links">
-                  <a
-                    href="https://healthkart-mu.vercel.app/"
-                    class="link__text"
-                    target="_blank"
-                  >
-                    Visit Site <span>&rarr;</span>
-                  </a>
-                  <a
-                    href="https://github.com/sumant236/healthkart-clone"
-                    target="_blank"
-                  >
-                    <img
-                      src="./images/github.svg"
-                      class="work__code"
-                      title="View Source Code"
-                      alt="GitHub"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="work__image-box">
-                <img
-                  src="./images/Project-5.png"
-                  class="work__image"
-                  alt="Project 1"
-                />
-              </div>
-            </div>
-
-            <div class="work__box">
-              <div class="work__text">
-                <h3>Chatter-Box</h3>
-                <p>
-                  A dynamic, real-time messaging platform for seamless
-                  communication, connecting users effortlessly across the globe.
-                  Join the conversation today!
-                </p>
-                <ul class="work__list">
-                  <li>React JS</li>
-                  <li>React Redux</li>
-                  <li>Material UI</li>
-                  <li>Express JS</li>
-                  <li>Mongo DB</li>
-                  <li>Server.io</li>
-                </ul>
-
-                <div class="work__links">
-                  <a
-                    href="https://chatter-box-sandy.vercel.app/"
-                    class="link__text"
-                    target="_blank"
-                  >
-                    Visit Site <span>&rarr;</span>
-                  </a>
-                  <a
-                    href="https://github.com/sumant236/Chatter-Box"
-                    target="_blank"
-                  >
-                    <img
-                      src="./images/github.svg"
-                      class="work__code"
-                      title="View Source Code"
-                      alt="GitHub"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="work__image-box">
-                <img
-                  src="./images/ChatterBox.png"
-                  class="work__image"
-                  alt="Project 1"
-                />
-              </div>
+            <div class="project-desc">
+              <p>
+                An online website which provides coaching for multiple courses
+                and prepare students for government exams.
+              </p>
+              <h6 class="skills-used">Skills Used:</h6>
+              <ul class="skills-used">
+                <li>React JS</li>
+                <li>Context API</li>
+                <li>JSON-Server</li>
+                <li>Material-UI</li>
+              </ul>
             </div>
           </div>
         </div>
-      </section>
-
-      <section class="client" id="skill">
-        <div class="row">
-          <h2>Skills</h2>
-          <div id="skills">
-            <button class="skl-btn">
-              <img src="images/HtmlLogo.svg" class="logo-img" alt="HtmlLogo" />
-              <p>HTML</p>
-            </button>
-            <button class="skl-btn">
-              <img src="images/CssLogo.svg" class="logo-img" alt="CssLogo" />
-              <p>CSS</p>
-            </button>
-            <button class="skl-btn">
-              <img
-                src="images/JavaScriptLogo.svg"
-                class="logo-img"
-                alt="JavascriptLogo"
-              />
-              <p>Javascript</p>
-            </button>
-            <button class="skl-btn img-width">
-              <img
-                src="./images/ReactLogo.svg"
-                class="logo-img"
-                alt="ReactLogo"
-              />
-              <p>React.js</p>
-            </button>
-            <button class="skl-btn img-width">
-              <img
-                src="./images/MongoDbLogo.svg"
-                class="logo-img"
-                alt="MongoDbLogo"
-              />
-              <p>MongoDb</p>
-            </button>
-            <button class="skl-btn img-width">
-              <img
-                src="./images/NodeJslogo.svg"
-                class="logo-img"
-                alt="NodeJsLogo"
-              />
-              <p>Node.js</p>
-            </button>
-            <button class="skl-btn img-width">
-              <img
-                src="./images/ExpressJS.png"
-                class="logo-img"
-                alt="ExpressJsLogo"
-              />
-              <p>Express Js</p>
-            </button>
-            <button class="skl-btn img-width">
-              <img
-                src="./images/MaterialUILogo.svg"
-                class="logo-img"
-                alt="MUILogo"
-              />
-              <p>Material UI</p>
-            </button>
-            <button class="skl-btn img-width">
-              <img
-                src="./images/AntDesignLogo.png"
-                class="logo-img"
-                alt="AntdLogo"
-              />
-              <p>Ant Design</p>
-            </button>
+        <div class="project">
+          <img src="./image/Project-4.jpg" />
+          <div class="background"></div>
+          <div class="project-details">
+            <div class="project-head">
+              <h3 class="project-name">Gusto-clone</h3>
+              <div class="visit-links">
+                <a
+                  href="https://sumant236.github.io/gusto_clone/why_gusto.html"
+                  target="_blank"
+                  >Visit Site <span>&rarr;</span></a
+                >
+                <a href="https://github.com/sumant236/gusto_clone">
+                  <i class="fa fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-desc">
+              <p>
+                A service-based organisation which helps other organisations by
+                managing data for them.
+              </p>
+              <h6 class="skills-used">Skills Used:</h6>
+              <ul class="skills-used">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
           </div>
         </div>
-      </section>
-    </main>
-
-    <section class="contact" id="contact">
-      <div class="row">
-        <h2>Get in Touch</h2>
-        <div class="contact__info">
+      </div>
+    </section>
+    <!-- Contact -->
+    <section id="contact">
+      <div class="section-heading contact-title">
+        <i class="fa-regular fa-address-card"></i>
+        <h1>Contact</h1>
+      </div>
+      <div class="contact">
+        <form action="submit" id="portfolioContactForm">
+          <input
+            type="text"
+            placeholder="Your Name"
+            name="name"
+            id="name"
+            required
+            class="contact-field"
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your Email"
+            required
+            class="contact-field"
+          />
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Message"
+            rows="3"
+            required
+            class="contact-field"
+          ></textarea>
+          <input
+            type="submit"
+            value="Send Message"
+            class="submit-btn"
+            id="submitBtn"
+          />
+        </form>
+        <div id="response-msg"></div>
+        <div class="contact-details">
+          <h4>Get In Touch</h4>
           <p>
             Are you looking for a fast-performing and user-friendly website to
             represent your product or business? or looking for any kind of
@@ -489,57 +605,39 @@
             will do my best to respond back. 😊 The quickest way to reach out to
             me is via an email.
           </p>
-          <a href="mailto:sumantsingh236@gmail.com" class="btn"
-            >Sumantsingh236@gmail.com</a
-          >
-          <div id="cont">
-            <img src="./images/PhoneLogo.png" alt="" />
-            <p>(+91) 9050764629</p>
+          <h4>My Address</h4>
+          <div>
+            <i class="fa-solid fa-location-dot"></i>
+            <p>VPO, Makrana, Charkhi Dadri, Haryana</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <p>+919050764629</p>
+          </div>
+          <div>
+            <i class="fa-regular fa-envelope"></i>
+            <p>Sumantsingh236@gmail.com</p>
           </div>
         </div>
       </div>
-    </section>
-
-    <footer role="contentinfo" class="footer">
-      <div class="row">
-        <ul class="footer__social-links">
-          <li class="footer__social-link-item">
-            <a
-              href="https://github.com/sumant236"
-              title="Link to Github Profile"
-              target="_blank"
-            >
-              <img
-                src="./images/github.svg"
-                class="footer__social-image"
-                alt="Github"
-              />
-            </a>
-          </li>
-          <li class="footer__social-link-item">
-            <a
-              href="https://www.linkedin.com/in/sumant-singh-619851192/"
-              target="_blank"
-            >
-              <img
-                src="./images/linkedin.svg"
-                title="Link to Linkedin Profile"
-                class="footer__social-image"
-                alt="Linkedin"
-              />
-            </a>
-          </li>
-        </ul>
+      <div class="contact-icons">
+        <a href="https://www.linkedin.com/in/sumant-singh-619851192/">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/sumant236">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="mailto:sumantsingh236@gmail.com">
+          <i class="fa-brands fa-google-plus-g"></i>
+        </a>
+        <a href="https://twitter.com/SumantSinghPh">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://www.quora.com/profile/Sumant-Singh-49">
+          <i class="fa-brands fa-quora"></i>
+        </a>
       </div>
-    </footer>
-
-    <a href="#top" class="back-to-top" title="Back to Top">
-      <img
-        src="./images/arrow-up.svg"
-        alt="Back to Top"
-        class="back-to-top__image"
-      />
-    </a>
-    <script src="./index.js"></script>
+    </section>
+    <script src="./script.js"></script>
   </body>
 </html>
